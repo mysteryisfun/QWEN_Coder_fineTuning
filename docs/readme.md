@@ -1,11 +1,5 @@
 # Masterplan: Fine-Tuning Qwen3-Coder for Python Unit Test Generation
 
-## Environment Setup
-- **Python**: 3.10 (conda environment recommended)
-- **CUDA**: 11.8 (for RTX 3050 compatibility)
-- **Environment Name**: `finetune`
-- **Setup Guide**: See [conda_setup.md](conda_setup.md) for detailed instructions
-
 ## Model
 - **Base Model**: Qwen/Qwen3-Coder-7B-Instruct (7B parameters, code-specialized; use GGUF Q4_K_S/Q4_K_M for 4GB VRAM RTX 3050).
 - **Why Chosen**: Strong community feedback for practical coding; feasible with quantization and CPU offload on low VRAM.
@@ -13,24 +7,9 @@
 
 ## Dataset
 - **Name**: CodeRM-UnitTest (Hugging Face: KAKA22/CodeRM-UnitTest).
-- **Size**: ~77.2k high-quality synthetic Python unit tests (curated for reward modeling; full size several GBs, streamable).
-- **Usage Plan**: Use 20k subset for training with 80/10/10 split (16k train / 2k val / 2k test) via train_test_split.
+- **Size**: ~60,000 high-quality synthetic Python unit tests (curated for reward modeling; full size several GBs, streamable).
+- **Usage Plan**: Start with 20k–40k subset for pilot; scale to full 60k if stable. Splits: 80/10/10 (train/val/test) via train_test_split.
 - **Format**: Pairs of code_under_test + unit_test; tokenize with model's tokenizer, max length 2048 tokens.
-
-### Dataset Details
-- **Origin**: Derived from CodeFeedback-Filtered-Instruction and TACO datasets
-- **Generation**: Synthetic unit tests created using Llama3.1-70B-Instruct with rigorous filtering
-- **Quality Metrics**: 
-  - FAR (False Acceptance Rate): Probability of incorrectly accepting invalid solutions
-  - FRR (False Rejection Rate): Probability of rejecting valid solutions
-  - Lower FAR/FRR = higher test robustness
-- **Structure**: 
-  - `task_id`: Unique identifier for each question
-  - `question`: Programming problem description
-  - `code_ground_truth`: Correct solution
-  - `unit_tests`: List of synthetic unit tests with quality scores
-- **License**: Apache 2.0
-- **Paper**: "Dynamic Scaling of Unit Tests for Code Reward Modeling" (arXiv:2501.01054)
 
 ## Fine-Tuning Guidelines
 - **Method**: QLoRA/PEFT (LoRA rank 8–16; target attention/MLP layers; LR 1e-5–2e-5; warmup 3–5%).

@@ -1,0 +1,4 @@
+2025-08-21 22:21:38,200 - training_utils - INFO - Training logging setup - Log file: C:\Users\ujwal\OneDrive\Documents\GitHub\QWEN_Coder_fineTuning\models\qwen-coder-finetune/logs/training_20250821_222138.log
+2025-08-21 22:21:38,203 - training_utils - INFO - Starting model training
+2025-08-21 22:21:38,203 - training_utils - INFO - Training config saved to C:\Users\ujwal\OneDrive\Documents\GitHub\QWEN_Coder_fineTuning\models\qwen-coder-finetune/training_config.json
+2025-08-21 22:33:45,202 - training_utils - INFO - Step 50 - GPU Memory: 5.46 GB (Max: 5.46 GB)

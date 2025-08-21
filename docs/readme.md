@@ -1,5 +1,11 @@
 # Masterplan: Fine-Tuning Qwen3-Coder for Python Unit Test Generation
 
+## Environment Setup
+- **Python**: 3.10 (conda environment recommended)
+- **CUDA**: 11.8 (for RTX 3050 compatibility)
+- **Environment Name**: `finetune`
+- **Setup Guide**: See [conda_setup.md](conda_setup.md) for detailed instructions
+
 ## Model
 - **Base Model**: Qwen/Qwen3-Coder-7B-Instruct (7B parameters, code-specialized; use GGUF Q4_K_S/Q4_K_M for 4GB VRAM RTX 3050).
 - **Why Chosen**: Strong community feedback for practical coding; feasible with quantization and CPU offload on low VRAM.

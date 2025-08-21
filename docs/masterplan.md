@@ -1,9 +1,15 @@
 # Execution Masterplan: Fine-Tuning Qwen3-Coder for Python Unit Test Generation
 
+## Prerequisites
+- **Conda Environment**: `finetune` with Python 3.10
+- **CUDA Setup**: PyTorch with CUDA 11.8 support
+- **Setup Guide**: Follow `docs/conda_setup.md` before starting
+
 ## Phase 1: Environment Setup & Data Preparation (Days 1-2)
 
 ### ✅ Step 1: Environment Setup
 - [x] Install dependencies from requirements.txt (completed)
+- [ ] **PRIORITY**: Setup conda environment 'finetune' with CUDA support
 - [ ] Configure Python environment for GPU/CPU usage
 - [ ] Test GPU availability and memory constraints (RTX 3050 4GB)
 - [ ] Set up logging for tracking

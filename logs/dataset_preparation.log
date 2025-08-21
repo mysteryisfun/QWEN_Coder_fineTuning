@@ -1,0 +1,3 @@
+2025-08-21 14:07:53,987 - INFO - Starting dataset preparation process
+2025-08-21 14:08:14,157 - WARNING - No GPU available, training will use CPU
+2025-08-21 14:11:25,138 - WARNING - No GPU available, training will use CPU (this will be very slow)

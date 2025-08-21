@@ -1,0 +1,3 @@
+2025-08-21 17:44:58,485 - training_utils - INFO - Training logging setup - Log file: C:\Users\ujwal\OneDrive\Documents\GitHub\QWEN_Coder_fineTuning\models\qwen-coder-finetune/logs/training_20250821_174458.log
+2025-08-21 17:44:58,485 - training_utils - INFO - Starting model training
+2025-08-21 17:44:58,485 - training_utils - INFO - Training config saved to C:\Users\ujwal\OneDrive\Documents\GitHub\QWEN_Coder_fineTuning\models\qwen-coder-finetune/training_config.json

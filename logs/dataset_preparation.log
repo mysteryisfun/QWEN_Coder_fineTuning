@@ -1,3 +1,22 @@
 2025-08-21 14:07:53,987 - INFO - Starting dataset preparation process
 2025-08-21 14:08:14,157 - WARNING - No GPU available, training will use CPU
 2025-08-21 14:11:25,138 - WARNING - No GPU available, training will use CPU (this will be very slow)
+2025-08-21 14:50:39,426 - INFO - Starting dataset preparation process
+2025-08-21 14:53:05,037 - INFO - GPU detected and tested: NVIDIA GeForce RTX 3050 Laptop GPU with 4.00 GB memory
+2025-08-21 14:53:26,329 - INFO - Loading CodeRM-UnitTest dataset from Hugging Face
+2025-08-21 14:53:32,066 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-08-21 14:53:59,642 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-08-21 14:57:16,396 - INFO - Dataset loaded with 17562 samples
+2025-08-21 14:57:27,122 - INFO - Dataset structure exploration completed
+2025-08-21 15:00:44,186 - INFO - Sampling 20000 records from 17562 total samples
+2025-08-21 15:00:44,186 - WARNING - Dataset smaller than requested sample size, using all 17562 samples
+2025-08-21 15:01:30,149 - INFO - Sampling 20000 records from 17562 total samples
+2025-08-21 15:01:30,150 - WARNING - Dataset smaller than requested sample size, using all 17562 samples
+2025-08-21 15:01:41,923 - INFO - Converting dataset to pandas DataFrame for splitting
+2025-08-21 15:02:00,277 - INFO - Created splits - Train: 14049, Val: 1756, Test: 1757
+2025-08-21 15:02:20,063 - INFO - Saving data splits to disk
+2025-08-21 15:02:59,313 - INFO - All data splits and metadata saved to ..\data
+2025-08-21 15:03:11,246 - INFO - Verifying saved data integrity
+2025-08-21 15:03:17,258 - INFO - Data integrity verification completed successfully
+2025-08-21 15:03:20,325 - INFO - Dataset preparation completed successfully!
+2025-08-21 15:03:20,327 - INFO - Ready to proceed with Step 3: Data preprocessing
